@@ -1,0 +1,44 @@
+[0m22:53:53.641659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146E7790C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146E826CB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146E9873D90>]}
+
+
+============================== 22:53:53.647004 | 780c1792-f4bd-483c-a218-5c5defae4ee1 ==============================
+[0m22:53:53.647004 [info ] [MainThread]: Running with dbt=1.10.13
+[0m22:53:53.647763 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Laptop Clinic\\.dbt', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'None', 'quiet': 'False', 'log_format': 'default', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'logs', 'introspect': 'True', 'invocation_command': 'dbt init snowflake_slaes_pipeline', 'fail_fast': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'target_path': 'None'}
+[0m22:53:53.665687 [debug] [MainThread]: Starter project path: C:\Users\Laptop Clinic\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
+[0m22:53:53.685022 [info ] [MainThread]: 
+Your new dbt project "snowflake_slaes_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:53:53.686766 [info ] [MainThread]: Setting up your profile.
+[0m22:55:35.750522 [info ] [MainThread]: Profile snowflake_slaes_pipeline written to C:\Users\Laptop Clinic\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:55:35.753004 [debug] [MainThread]: Command `dbt init` succeeded at 22:55:35.752828 after 102.25 seconds
+[0m22:55:35.753419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F99EFCE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146E82805F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F9A519D0>]}
+[0m22:55:35.753814 [debug] [MainThread]: Flushing usage events
+[0m22:55:36.561606 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:17:14.062120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFA9310C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFA9DE8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFAA423D90>]}
+
+
+============================== 05:17:14.088691 | 7fadd7f0-a4b1-47cf-a590-f173fffbe2e0 ==============================
+[0m05:17:14.088691 [info ] [MainThread]: Running with dbt=1.10.13
+[0m05:17:14.089523 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'empty': 'False', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'profiles_dir': 'C:\\Users\\Laptop Clinic\\.dbt', 'log_format': 'default', 'quiet': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'logs', 'introspect': 'True', 'invocation_command': 'dbt run', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'use_experimental_parser': 'False'}
+[0m05:17:14.095578 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\engenrring Hema\Data Engineeing\projects\snowflake_data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m05:17:14.097204 [debug] [MainThread]: Command `dbt run` failed at 05:17:14.097028 after 0.30 seconds
+[0m05:17:14.097552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFAA46D220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFAA4797F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFAA2C6AD0>]}
+[0m05:17:14.097854 [debug] [MainThread]: Flushing usage events
+[0m05:17:14.944077 [debug] [MainThread]: An error was encountered while trying to flush usage events

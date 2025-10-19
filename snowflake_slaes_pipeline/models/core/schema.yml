@@ -1,0 +1,75 @@
+version: 2
+
+models:
+    - name: dim_order_transactions
+      description: ""
+
+    - name: dim_customer
+      description: ""
+    
+    - name: dim_date
+      description: ""
+
+    - name: dim_order 
+      description: "" 
+    
+    - name: dim_product
+      description: ""
+
+    - name: fact_sales
+      description: ""
+      columns: 
+        - name: transaction_id
+          description: ""  
+          data_type: numeric
+          data_tests: 
+            - not_null:
+                config:
+                  severity: error
+            - relationships:
+                to: ref('dim_order_transactions')
+                field: transaction_id
+        
+        - name: order_id 
+          description: ""
+          data_type: numeric
+          data_tests:
+            - relationships:
+                to: ref('dim_order')
+                field: order_id
+        
+        - name: product_id
+          description: "" 
+          data_type: numeric
+          data_tests:
+            - relationships: 
+                to: ref('dim_product')
+                field: product_id
+        
+        - name: customer_id 
+          description: "" 
+          data_type: numeric
+          data_tests:
+            - relationships:
+                to: ref('dim_customer')
+                field: customer_id
+        
+        - name: date_id
+          description: "" 
+          data_type: numeric
+          data_tests:
+            - relationships:
+                to: ref('dim_date')
+                field: date_id
+
+        - name: quantity
+          description: "" 
+          data_type: numeric
+        
+        - name: unit_price 
+          description: "" 
+          data_type: numeric
+        
+        - name: total_amount
+          description: "" 
+          data_type: numeric
